@@ -170,7 +170,6 @@ This document presents the raw output from various TypeScript Node.js scripts us
     - A simple HTML template with a message indicating the energy consumption.
 
     Remember to replace the placeholder URL and service implementation with actual values or configurations that fit your application.
-    ```
 
 ---
 
