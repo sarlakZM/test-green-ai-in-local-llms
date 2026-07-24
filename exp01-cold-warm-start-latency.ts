@@ -50,15 +50,3 @@ async function runExperiment1() {
 
 runExperiment1();
 
-
-// === Experiment 1: Measuring keep_alive & Cold Starts ===
-// Forcing model unload by sending keep_alive: 0...
-// Model unloaded. Waiting 2 seconds for system cleanup...
-// Cold Start Latency: 6341ms
-// Sending Request 2 (Warm Start)...
-// Warm Start Latency: 2024ms
-
-// Re-unloading model (keep_alive: 0)...
-// Unload Request Time (Response + Unload): 2654ms
-
-// Analysis: Cold Start took 4.32s longer than Warm Start.

@@ -51,11 +51,3 @@ async function runExperiment2() {
 }
 
 runExperiment2();
-
-
-// === Experiment 2: Context Window & Truncation ===
-// Generated prompt length: 22821 characters.
-// Running configurations...
-// [num_ctx: 512] Latency: 9614ms | Response: "Sustainable software engineering."
-// [num_ctx: 2048] Latency: 28090ms | Response: "Sustainable software engineering"
-// [num_ctx: 8192] Latency: 127335ms | Response: "AI with environmental sustainability features."
