@@ -1,0 +1,26 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "CommonJS",             // <-- همچنان CommonJS
+    "target": "ES2020",               // <-- هدف مناسب برای Node.js
+    "moduleResolution": "node",       // <-- Node resolution
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "strict": true,
+    "skipLibCheck": true,             // <-- این را هم نگه دارید
+    "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": false     // <-- False برای CommonJS
+  },
+  "include": [
+    "**/*.ts" // اطمینان از اینکه همه فایل‌های ts شامل می‌شوند
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts" // فایل‌های تست معمولا نیاز به کامپایل ندارند
+  ]
+}

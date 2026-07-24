@@ -107,12 +107,12 @@ function getOllamaResourceUsage(): ResourceMetrics {
     }
 
     const totalRamBytes = processes.reduce(
-      (acc, curr) => acc + Number(curr.WorkingSetPrivate || 0),
+      (acc: any, curr: any) => acc + Number(curr.WorkingSetPrivate || 0),
       0
     );
 
     const totalCpuRaw = processes.reduce(
-      (acc, curr) => acc + Number(curr.PercentProcessorTime || 0),
+      (acc: any , curr: any) => acc + Number(curr.PercentProcessorTime || 0),
       0
     );
 
@@ -273,7 +273,7 @@ async function run() {
   console.log('STARTING EXPERIMENT 3: RESOURCE THROTTLING & GREEN BENCHMARK');
   console.log('===========================================================');
 
-  const runsPerScenario = 1;
+  const runsPerScenario = 5;
   const allResults: RunResult[] = [];
 
   // Scenario A: default process priority and normal system behavior

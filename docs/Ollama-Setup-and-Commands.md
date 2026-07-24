@@ -237,4 +237,9 @@ curl.exe http://127.0.0.1:11434/api/version
 curl.exe http://127.0.0.1:11434/api/tags
 where.exe ollama
 Get-Process ollama
+
+ollama run qwen2.5:1.5b "Reply with exactly: Ollama is working"                              
+
+Get-Process | Where-Object {  $_.ProcessName -match 'ollama|llama'} | Select-Object Id, ProcessName                          
+
 ```

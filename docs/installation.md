@@ -86,7 +86,9 @@ cd project && npm install
 + Install ts-node globally if needed
 npm install -g ts-node
 
-+ (npx tsc | ts-node) filename.ts
++ npx  ts-node filename.ts
+
+or npx tsc filename.ts/ filename.js
 
 ```
 

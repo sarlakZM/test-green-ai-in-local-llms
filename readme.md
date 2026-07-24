@@ -19,7 +19,7 @@ For detailed instructions on how to install Ollama on your system, please refer 
 
 ### Ollama Commands and Configuration
 
-Once Ollama is installed, you'll need to know how to interact with it. The **[Ollama Commands and Configuration](docs/Ollama-Setup-and-Commands.md)** document provides a comprehensive reference for:
+Once Ollama is installed, you'll need to know how to interact with it. The **[Ollama Commands and Configuration](docs/ollama-setup-and-commands.md)** document provides a comprehensive reference for:
 
 *   Core CLI commands
 *   Local API endpoints
@@ -27,7 +27,10 @@ Once Ollama is installed, you'll need to know how to interact with it. The **[Ol
 *   Model management
 *   Environment variable settings
 *   Troubleshooting common errors
-*   
+    
+### Test Run Analysis
+
+For a detailed breakdown of all test results, including performance tables (TPS, Latency, CPU, RAM), strategic recommendations for developers, and insights into "Green AI" potential, please refer to the **[Analysis of Test Runs](docs/analysis-of-test-runs-en.md)** document.
 
 ---
 
@@ -36,6 +39,7 @@ Once Ollama is installed, you'll need to know how to interact with it. The **[Ol
 - [Local-First Green AI - README Documentation](#local-first-green-ai---readme-documentation)
     - [Installation](#installation)
     - [Ollama Commands and Configuration](#ollama-commands-and-configuration)
+    - [Test Run Analysis](#test-run-analysis)
   - [Table of Contents](#table-of-contents)
   - [1. Academic Profile \& Research Scope](#1-academic-profile--research-scope)
   - [2. File 1: `test-ollama.ts` - Low-Resource Generation Sanity Test](#2-file-1-test-ollamats---low-resource-generation-sanity-test)
@@ -170,8 +174,6 @@ This experiment provides direct evidence for the trade-off between context reten
 ## 7. Green Computing Guidelines & Best Practices
 
 | Parameter | Recommended Value | Green AI Rationale |
-
-| :--- | :--- | :--- |
 
 | `keep_alive` | `0` or `30s` | Purges VRAM or RAM immediately after execution to return the system to baseline idle power. |
 
