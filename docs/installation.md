@@ -42,16 +42,16 @@ npx verdaccio
 Create a local configuration file at backend/test/config.ts to manage endpoints and model selection:
 
 
-// config.ts
+config.ts
 
-// The local API endpoint for Ollama generation tasks
-export const OLLAMA_API = 'http://localhost:11434/api/generate';
+ The local API endpoint for Ollama generation tasks
+```export const OLLAMA_API = 'http://localhost:11434/api/generate';```
 
-// Primary low-resource model selected for green profiling benchmarks (0.92 GB footprint)
-export const TEST_MODEL = 'qwen2.5:1.5b'; 
+ Primary low-resource model selected for green profiling benchmarks (0.92 GB footprint)
+```export const TEST_MODEL = 'qwen2.5:1.5b'; ```
 
-// Alternative baseline model for coding tasks:
-// export const TEST_MODEL = 'qwen2.5-coder:3b'; 
+ Alternative baseline model for coding tasks:
+ ```export const TEST_MODEL = 'qwen2.5-coder:3b'; ```
 
 ## 4. Local LLM Inventory & System Verification
 The benchmark suite expects the target models to be loaded locally on disk. Ensure your local Ollama registry matches the tested profiles. You can verify available models by running:
