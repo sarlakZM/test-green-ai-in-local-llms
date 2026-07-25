@@ -1,38 +1,4 @@
-# Local-First Green AI - README Documentation
 
-This document provides detailed documentation, structural breakdowns, and
- resource-optimization guidelines for the core utility scripts used in verifying,
- managing, and interacting with the local Ollama inference engine.
-
- Green Computing & Resource Optimization
- When running LLMs locally on developer workstations, resource footprint management is critical. Every execution detail—from thread limits ( num_thread ) to context windows ( num_ctx ) and memory unloading
- ( keep_alive )—directly impacts: 
- 1. CPU Usage: Prevents processor saturation, preserving system responsiveness. 
- 2. RAM Footprint: Avoids swapping to disk, which degrades performance and increases power
- consumption. 
- 3. Inference Latency & Energy Draw: Reduces overall instruction execution time, leading to lower energy footprint.
-
-
-### Installation
-
-For detailed instructions on how to install Ollama on your system, please refer to the **[Installation Guide](docs/installation.md)**. This guide covers prerequisites, download links, and step-by-step setup for various operating systems.
-
-### Ollama Commands and Configuration
-
-Once Ollama is installed, you'll need to know how to interact with it. The **[Ollama Commands and Configuration](docs/ollama-setup-and-commands.md)** document provides a comprehensive reference for:
-
-*   Core CLI commands
-*   Local API endpoints
-*   Monitoring and status checks
-*   Model management
-*   Environment variable settings
-*   Troubleshooting common errors
-    
-### Test Run Analysis
-
-For a detailed breakdown of all test results, including performance tables (TPS, Latency, CPU, RAM), strategic recommendations for developers, and insights into "Green AI" potential, please refer to the **[Analysis of Test Runs](docs/analysis-of-test-runs-en.md)** document.
-
----
 
 ## Table of Contents
 
@@ -71,6 +37,41 @@ For a detailed breakdown of all test results, including performance tables (TPS,
     - [Version C: `exp03-process-priority-throttling.improved.ts` - Resource Profiling and Academic Reporting](#version-c-exp03-process-priority-throttlingimprovedts---resource-profiling-and-academic-reporting)
     - [Green Computing \& Resource Optimization](#green-computing--resource-optimization-5)
     - [Research Relevance](#research-relevance-5)
+
+---
+# Local-First Green AI - README Documentation
+
+This document provides detailed documentation, structural breakdowns, and
+ resource-optimization guidelines for the core utility scripts used in verifying,
+ managing, and interacting with the local Ollama inference engine.
+
+ Green Computing & Resource Optimization
+ When running LLMs locally on developer workstations, resource footprint management is critical. Every execution detail—from thread limits ( num_thread ) to context windows ( num_ctx ) and memory unloading
+ ( keep_alive )—directly impacts: 
+ 1. CPU Usage: Prevents processor saturation, preserving system responsiveness. 
+ 2. RAM Footprint: Avoids swapping to disk, which degrades performance and increases power
+ consumption. 
+ 3. Inference Latency & Energy Draw: Reduces overall instruction execution time, leading to lower energy footprint.
+
+
+### Installation
+
+For detailed instructions on how to install Ollama on your system, please refer to the **[Installation Guide](docs/installation.md)**. This guide covers prerequisites, download links, and step-by-step setup for various operating systems.
+
+### Ollama Commands and Configuration
+
+Once Ollama is installed, you'll need to know how to interact with it. The **[Ollama Commands and Configuration](docs/ollama-setup-and-commands.md)** document provides a comprehensive reference for:
+
+*   Core CLI commands
+*   Local API endpoints
+*   Monitoring and status checks
+*   Model management
+*   Environment variable settings
+*   Troubleshooting common errors
+    
+### Test Run Analysis
+
+For a detailed breakdown of all test results, including performance tables (TPS, Latency, CPU, RAM), strategic recommendations for developers, and insights into "Green AI" potential, please refer to the **[Analysis of Test Runs](docs/analysis-of-test-runs-en.md)** document.
 
 ---
 
